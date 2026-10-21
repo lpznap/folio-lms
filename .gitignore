@@ -1,0 +1,21 @@
+node_modules/
+dist/
+bin/
+obj/
+.tools/
+*.db*
+.env
+artifacts/
+*.tsbuildinfo
+
+# Local environment and machine-specific editor settings
+.env.*
+!.env.example
+.vscode/settings.json
+# Original assessment document
+*.pdf
+# Local IDE state
+.vs/
+*.user
+*.suo
+TestResults/
