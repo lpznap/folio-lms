@@ -2,6 +2,32 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Debug React (Edge)",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:8080/?debug=react",
+      "webRoot": "${workspaceFolder}/frontend/dist",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "../../src/*": "${workspaceFolder}/frontend/src/*",
+        "../../node_modules/*": "${workspaceFolder}/frontend/node_modules/*",
+        "http://localhost:8080/src/*": "${workspaceFolder}/frontend/src/*"
+      }
+    },
+    {
+      "name": "Debug React (Chrome)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8080/?debug=react",
+      "webRoot": "${workspaceFolder}/frontend/dist",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "../../src/*": "${workspaceFolder}/frontend/src/*",
+        "../../node_modules/*": "${workspaceFolder}/frontend/node_modules/*",
+        "http://localhost:8080/src/*": "${workspaceFolder}/frontend/src/*"
+      }
+    },
+    {
       "name": "Attach to Folio API (Docker)",
       "type": "coreclr",
       "request": "attach",

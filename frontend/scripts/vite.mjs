@@ -34,6 +34,7 @@ function cleanup() {
 const config = {
   // Inline configuration avoids watching the same config through two drive paths.
   configFile: false,
+  build: { sourcemap: true },
   root: runRoot,
   resolve: { preserveSymlinks: true },
   server: {
